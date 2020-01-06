@@ -36,6 +36,7 @@ func createskitur(w http.ResponseWriter, r *http.Request) {
 	enableCors(&w)
 	var newskitur skitur
 	reqBody, err := ioutil.ReadAll(r.Body)
+	//Endre feilhåndtering. Denne virker ikke!
 	if err != nil {
 		fmt.Println(w, "Vennligst legg til dato, antallkilomenter, antallminutter og sted")
 	}
