@@ -36,7 +36,7 @@ func createskitur(w http.ResponseWriter, r *http.Request) {
 	enableCors(&w)
 	var newskitur skitur
 	reqBody, err := ioutil.ReadAll(r.Body)
-	//Endre feilhåndtering. Denne virker ikke!
+	//Endre feilhåndtering. Denne virker ikke! Hvorfor slår ikke denne til når input er tomt
 	if err != nil {
 		fmt.Println(w, "Vennligst legg til dato, antallkilomenter, antallminutter og sted")
 	}
