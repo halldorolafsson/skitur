@@ -1,0 +1,53 @@
+
+/** Skilogg **/
+
+-   Lag system som lagrer data knyttet til skiturer
+-   Registrerte følgende data:
+        -   Antall kilometer
+        -   Lengde i tid (start og slutt tidspunkt)
+        -   Sted og løype
+        -   Utsyr (hvilke ski)
+        -   Vær
+        -   Føre og forhold (temeratur, vind, snøtype, nyepreppa, ikkepreppa osv)
+        -   Var hunden med? 
+-   Skrives i Golang
+-   REST Api POST kall
+-   Lagres som JSON i MongoDB
+-   Front-end i Javascript fra Eir? De fra Elektron? Bytte ut MySQL del med REST Api og JSON 
+-   Eller PHP og HTML?
+-   Hente ut JSON data og vise frem
+-   Systemet som ble laget i 2018 kjører i Elektron, Javascript og Mysql 
+-   Scripene for en den strukturerte databasen finnes.
+-   Mysql database
+-   Plan A: 
+    -   Lage structs for hver JSON
+    -   
+ToDo
+-   Installere mysql og køre inn databasen til Eir
+-   Lage rapportløsing i Mysql
+-   tutorialedge.net JSON i MongoDB
+-   Teste config.json om det vriker (URL i configgil som leses av index.json)
+-   Finne ut av CSS
+-   Installere løsningen i Google Cloud (html, csss, javascipt golang)
+-   Sjekke om mongodb kan kjøres i Mlab
+-   Sette opp miljø som flytter kode fra dev til prod
+-   Testmiljø. Hvordan?
+
+Doing 
+-   Les om Golang insert til Mongodb for json objekter
+-   Flytte kode til GIT og ta i bruk.
+   - Øve på clone og push   
+   - Går ikke så bra
+-   Lage Mongodb på Mlab instans og skjønne hvordan denne virker. 
+
+Done
+-   Configfil for javasciptkoden. Ikke hardkode linker - Funker ikke uten  require.js modul. Utsetter inntil videre. Ta op tråden i CICD jobben
+-   Installere og kjøre med Nginx web server
+-   Definere JSON structs for skitur
+-   Go tutorialedge.net REST Api
+-   Hvordan sende inn minimum av data til rest api 
+-   GO api kode
+-   Lage index.html
+-   Javascript som kaller Go POST api
+
+

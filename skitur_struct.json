@@ -1,0 +1,20 @@
+{
+    "_comment": "Struct/JSON for Skitur",
+    "dato": "22.12.2019",
+    "antallkilometer": "10.1",
+    "tid": 
+    {
+        "antallmintter": 95,
+        "starttid": "11:00",
+        "sluttid": "12:35"
+    }, 
+    "sted": 
+    {   
+        "startsted": "Bak Vulu",
+        "via_sted_1": "Mørktjønna",
+        "via_sted_2": "Hytta",
+        "via_sted_3": "Skarpåsen",
+        "via_sted_4": "Tøftin"
+    },
+
+}

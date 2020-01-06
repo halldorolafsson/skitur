@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8" />
+        <title>
+            Skilogg 
+        </title>
+    </head> 
+    <body style="text-align:center;" id="body"> 
+        <h1 style="color:green;">Loggføring av skiturer</h1> 
+        <p> 
+            <!-- Making a text input -->
+            <input type="text" id="dato" placeholder="Dato i format dd.mm.yyyy"> 
+            <input type="text" id="antallkilometer" placeholder="Antall kilometer"> 
+            <input type="text" id="antallminutter" placeholder="Antall minutter">
+            <input type="text" id="sted" placeholder="Sted (før opp startsted og viasteder adskilt med bidesrek">
+            <!-- Buttons -->
+            <p>
+            <button onclick="sendJSON()">Lagre</button>
+            <button onclick="goBack()">Tilbake</button>
+            <!-- For printing result from server -->
+            <div id="result" style="color:green"></div>
+            </p>
+        </p> 
+        <!-- Include the JavaScript file -->
+        <script src="index.js"></script> 
+    </body> 
+</html> 
