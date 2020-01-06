@@ -35,12 +35,12 @@ ToDo
 
 Doing 
 -   Les om Golang insert til Mongodb for json objekter
--   Flytte kode til GIT og ta i bruk.
-   - Øve på clone og push   
-   - Går ikke så bra
--   Lage Mongodb på Mlab instans og skjønne hvordan denne virker. 
+
+ -   Lage Mongodb på Mlab instans og skjønne hvordan denne virker. 
 
 Done
+-   Flytte kode til GIT og ta i bruk.
+- Øve på clone og push   
 -   Configfil for javasciptkoden. Ikke hardkode linker - Funker ikke uten  require.js modul. Utsetter inntil videre. Ta op tråden i CICD jobben
 -   Installere og kjøre med Nginx web server
 -   Definere JSON structs for skitur
