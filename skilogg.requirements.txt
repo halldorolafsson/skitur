@@ -26,21 +26,25 @@ ToDo
 -   Installere mysql og køre inn databasen til Eir
 -   Lage rapportløsing i Mysql
 -   tutorialedge.net JSON i MongoDB
--   Teste config.json om det vriker (URL i configgil som leses av index.json)
 -   Finne ut av CSS
 -   Installere løsningen i Google Cloud (html, csss, javascipt golang)
 -   Sjekke om mongodb kan kjøres i Mlab
 -   Sette opp miljø som flytter kode fra dev til prod
 -   Testmiljø. Hvordan?
+-   Mer kode Kode 
+    -   Feilmelding når server ikke svarer
+    -   Pålogging
+    -   Utvide med kommentarfelt på skitur
+    -   Hvordan strukturere kode (go, html, js)
+
 
 Doing 
 -   Les om Golang insert til Mongodb for json objekter
-
- -   Lage Mongodb på Mlab instans og skjønne hvordan denne virker. 
+-   Lage Mongodb på Mlab instans og skjønne hvordan denne virker. 
 
 Done
 -   Flytte kode til GIT og ta i bruk.
-- Øve på clone og push   
+    - Øve på clone og push   
 -   Configfil for javasciptkoden. Ikke hardkode linker - Funker ikke uten  require.js modul. Utsetter inntil videre. Ta op tråden i CICD jobben
 -   Installere og kjøre med Nginx web server
 -   Definere JSON structs for skitur
