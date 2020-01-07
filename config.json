@@ -1,3 +1,4 @@
 {
-    "urlAddSkiTrip": "http://localhost:8080/skitur"
+    "urlAddSkiTrip": "http://localhost:8080/skitur",
+    "mlab": "mongo ds147566.mlab.com:47566/skilogg -u skilogg -p Haukur123"
 }
