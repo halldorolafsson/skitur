@@ -1,28 +1,53 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <meta charset="utf-8" />
-        <title>
-            Skilogg 
-        </title>
-    </head> 
-    <body style="text-align:center;" id="body"> 
-        <h1 style="color:green;">Loggføring av skiturer</h1> 
-        <p> 
-            <!-- Making a text input -->
-            <input type="text" id="dato" placeholder="Dato i format dd.mm.yyyy"> 
-            <input type="text" id="antallkilometer" placeholder="Antall kilometer"> 
-            <input type="text" id="antallminutter" placeholder="Antall minutter">
-            <input type="text" id="sted" placeholder="Sted (før opp startsted og viasteder adskilt med bidesrek">
-            <!-- Buttons -->
-            <p>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Skilogg
+    </title>
+</head>
+
+<body style="text-align:center;" id="body">
+    <h1 style="color:green;">Loggføring av skiturer</h1>
+    <p>
+        <!-- Making a text input -->
+        <input type="text" id="dato" placeholder="Dato i format dd.mm.yyyy">
+        <input type="text" id="antallkilometer" placeholder="Antall kilometer">
+        <input type="text" id="antallminutter" placeholder="Antall minutter">
+        <input type="text" id="sted" placeholder="Sted (før opp startsted og viasteder adskilt med bidesrek">
+        <!-- Buttons -->
+        <p>
             <button onclick="sendJSON()">Lagre</button>
             <button onclick="goBack()">Tilbake</button>
             <!-- For printing result from server -->
             <div id="result" style="color:green"></div>
-            </p>
-        </p> 
-        <!-- Include the JavaScript file -->
-        <script src="index.js"></script> 
-    </body> 
-</html> 
+        </p>
+    </p>
+    <!-- Include the JavaScript file -->
+    <script src="index.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCS8MTKh2vLf2HYf7p5kC2E2ElbygtjCF8",
+            authDomain: "skilogg.firebaseapp.com",
+            databaseURL: "https://skilogg.firebaseio.com",
+            projectId: "skilogg",
+            storageBucket: "skilogg.appspot.com",
+            messagingSenderId: "767553354267",
+            appId: "1:767553354267:web:0f25724d30cacc285c96be",
+            measurementId: "G-8H56V1QZV4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</body>
+
+</html>

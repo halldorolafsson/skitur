@@ -1,8 +1,8 @@
 function sendJSON(){
-    let dato = document.querySelector('#dato'); 
-    let antallkilometer = document.querySelector('#antallkilometer'); 
-    let antallminutter = document.querySelector('#antallminutter'); 
-    let sted = document.querySelector('#sted'); 
+    let Dato = document.querySelector('#Dato'); 
+    let Antallkilometer = document.querySelector('#Antallkilometer'); 
+    let Antallminutter = document.querySelector('#Antallminutter'); 
+    let Sted = document.querySelector('#Sted'); 
   
     // // Debuggery 
     console.log("Started");
@@ -18,7 +18,7 @@ function sendJSON(){
     // // Debuggery 
     console.log("Innsendt data: "+ data);
 
-    //Hard coded link. Need som sort og config here
+    //Hard coded link. Need some sort og config here
     let url_1 = 'http://localhost:8080/skitur';
     // // Debuggery 
     console.log("Url fra config: "+ url_1);
