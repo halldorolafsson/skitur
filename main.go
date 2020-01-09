@@ -31,10 +31,6 @@ func createSkitur(w http.ResponseWriter, r *http.Request) {
 	enableCors(&w)
 	var newskitur skitur
 	reqBody, err := ioutil.ReadAll(r.Body)
-
-	// Ols style debuggery
-	fmt.Println(w, reqBody)
-
 	//Endre feilhåndtering. Denne virker ikke! Hvorfor slår ikke denne til når input er tomt
 	if err != nil {
 		fmt.Println(w, "Vennligst legg til dato, antallkilomenter, antallminutter og sted")
@@ -55,10 +51,8 @@ func enableCors(w *http.ResponseWriter) {
 	(*w).Header().Set("Content-Type", "application/json")
 }
 func storeSkitur(s skitur) {
-
 	// Fetch colletion form database using var cnx which is the connection function
 	collection := cnx.Database("skilogg").Collection("skitur")
-
 	// Do the insert
 	insertResult, err := collection.InsertOne(context.TODO(), s)
 	if err != nil {
@@ -70,19 +64,17 @@ func storeSkitur(s skitur) {
 func connection() *mongo.Client {
 	// Set client connection/options // Need to fix this hard coded stuff
 	clientOptions := options.Client().ApplyURI("mongodb://skilogg:Haukur123@ds147566.mlab.com:47566/skilogg?retryWrites=false")
-
 	// Connect to MongoDB
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	// Check the connection
 	err = client.Ping(context.TODO(), nil)
 	if err != nil {
 		log.Fatal(err)
 	}
-	//fmt.Println("Connected to MongoDB!")
+	fmt.Println("Connected to MongoDB!")
 
 	return client
 }
