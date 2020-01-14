@@ -2,6 +2,7 @@
 /** Skilogg **/
 
 -   Lag system som lagrer data knyttet til skiturer
+-   Lage MVP og så utvide
 -   Registrerte følgende data:
         -   Antall kilometer
         -   Lengde i tid (start og slutt tidspunkt)
@@ -25,25 +26,22 @@
 ToDo
 -   MVP !!! KISS !!!
 -   Installere mysql og køre inn databasen til Eir
+-   Migrere fra MOngo til Mysql (prosess for replikering)
 -   Lage rapportløsing i Mysql? 
--   Finne ut av CSS
+-   Finne ut av CSS for å pynte siden. 
 -   Installere løsningen i Google Cloud (html, csss, javascipt golang)
--   Sette opp miljø som flytter kode fra dev til test til prod
+-   Sette opp CICD miljø i Netlify
 -   Testmiljø. Hvordan?
--   Mer kode Kode 
+-   Mer kode 
     -   Feilmelding når server ikke svarer
     -   Pålogging
     -   Utvide med kommentarfelt på skitur
     -   Hvordan strukturere kode (go, html, js)
--   Sette opp testmiljø
-
-
 Doing 
-    -   Få i gang skiloggen på havs.us i Google Cloud
-        -   Fikse Cloudflare og Namecheap
-    -   Authetication i fra Google Firebase. Skjønner ikke denne helt...
+    -   Authetication i fra Google Firebase. Fikse denne ved å lage javascript kode manuelt. Ikke Firebase sine build in...
+    -   Få i gang skiloggen på ikkeheltpaa.net i Google Cloud
 
-
+     
 Done
 -   Sjekke om mongodb kan kjøres i Mlab
 -   Les om Golang insert til Mongodb for json objekter
