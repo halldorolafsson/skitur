@@ -36,10 +36,17 @@ ToDo
     -   Feilmelding når server ikke svarer
     -   Pålogging
     -   Utvide med kommentarfelt på skitur
-    -   Hvordan strukturere kode (go, html, js)
+    -   Hvordan strukturere kode (go, html, js) -> Drit i det, put alt i samme mappe inntil videre
+    Sjekke ut GITHUB actions!
+
 Doing 
     -   Authetication i fra Google Firebase. Fikse denne ved å lage javascript kode manuelt. Ikke Firebase sine build in...
-    -   Få i gang skiloggen på ikkeheltpaa.net i Google Cloud
+        -   Gitt opp Firebase prøver Okta
+    -   
+    -   Få i gang skiloggen på havs.us  i Google Cloud
+    -   Opprette test databasemiljø
+    -   Konfig for bytte mellom test og utvikling
+
 
      
 Done
