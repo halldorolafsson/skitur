@@ -63,7 +63,7 @@ func storeSkitur(s skitur) {
 
 func connection() *mongo.Client {
 	// Set client connection/options // Need to fix this hard coded stuff
-	clientOptions := options.Client().ApplyURI("mongodb://skilogg:Haukur123@ds147566.mlab.com:47566/skilogg?retryWrites=false")
+	clientOptions := options.Client().ApplyURI("mongodb://skilogg:PWD@USERID.mlab.com:ID/skilogg?retryWrites=false")
 	// Connect to MongoDB
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 	if err != nil {
